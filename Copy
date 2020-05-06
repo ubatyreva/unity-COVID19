@@ -1,0 +1,28 @@
+using UnityEngine;
+
+public class Copy : MonoBehaviour
+{
+    
+public GameObject[] wallV;
+public float starttime;
+private float timebtw;
+
+
+    private void Update()
+    {
+
+if (timebtw <= 0){
+
+int rand = Random.Range(0, wallV.Length);
+Instantiate( wallV[rand], transform.position, Quaternion.identity);
+timebtw=starttime;
+
+}
+
+else {
+
+timebtw -= Time.deltaTime;
+        
+    }
+}
+}
