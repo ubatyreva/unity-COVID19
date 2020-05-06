@@ -1,0 +1,24 @@
+using UnityEngine;
+
+public class Control : MonoBehaviour
+{
+
+public Rigidbody2D rb; 
+public float jumpForce = 1200f; 
+
+
+        void Start()
+    {
+        rb = GetComponent<Rigidbody2D>();
+    }
+
+    
+    void Update()
+    {
+     
+     if(Input.GetKeyDown(KeyCode.UpArrow))      {
+         rb.AddForce(Vector2.up * jumpForce);      }
+
+        
+    }
+}
