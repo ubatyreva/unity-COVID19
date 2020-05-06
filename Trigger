@@ -1,0 +1,15 @@
+using UnityEngine;
+
+public class Trigger : MonoBehaviour
+{
+
+public float speed;
+
+    void Update() {
+
+transform.Translate (Vector2.left * speed); }
+
+
+}
+
+//Этот код привязан к колоннам. Обработку OnTrigger убрала, чтобы написать новую, тк старая не работала
