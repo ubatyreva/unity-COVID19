@@ -1,0 +1,18 @@
+using UnityEngine;
+
+public class Point : MonoBehaviour
+{
+    
+public GameObject wall;
+
+    void Start()
+    {
+        
+Instantiate (wall, transform.position, Quaternion.identity);
+
+    }
+
+    
+}
+
+//нужно для генерирования препятсвий в разных точках
